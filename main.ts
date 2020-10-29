@@ -12,6 +12,12 @@ input.onButtonPressed(Button.A, function () {
     if (choicee == 3) {
         music.startMelody(music.builtInMelody(Melodies.Wedding), MelodyOptions.Once)
     }
+    if (choicee == 4) {
+        music.startMelody(music.builtInMelody(Melodies.Ode), MelodyOptions.Once)
+    }
+})
+input.onButtonPressed(Button.AB, function () {
+    music.playMelody("C G G F E D C5 G ", 150)
 })
 input.onButtonPressed(Button.B, function () {
     music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Once)
